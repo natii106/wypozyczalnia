@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url"><![CDATA[jdbc:mysql://127.0.0.1:3306/wypozyczalnia]]></property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+        <mapping class="pl.walasik.wypozyczalnia.model.Image"/>
+        <mapping class="pl.walasik.wypozyczalnia.model.Payment"/>
+        <mapping class="pl.walasik.wypozyczalnia.model.Product"/>
+        <mapping class="pl.walasik.wypozyczalnia.model.ProductCategory"/>
+        <mapping class="pl.walasik.wypozyczalnia.model.ProductDetails"/>
+        <mapping class="pl.walasik.wypozyczalnia.model.Rent"/>
+        <mapping class="pl.walasik.wypozyczalnia.model.RentDates"/>
+        <mapping class="pl.walasik.wypozyczalnia.model.User"/>
+        <mapping class="pl.walasik.wypozyczalnia.model.UserAddress"/>
+    </session-factory>
+</hibernate-configuration>
